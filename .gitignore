@@ -82,3 +82,21 @@ InitTestScene*.unity
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/Windows/
 /ProfileAnalyzer
 /push.sh
+
+# JetBrains Rider / IntelliJ IDEA
+.idea/*
+# Shared project settings
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/runConfigurations/
+!.idea/vcs.xml
+!.idea/modules.xml
+!.idea/*.iml
+# Ignore user workspace-level files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+*.iws
+*.sln.DotSettings.user
+*.user
