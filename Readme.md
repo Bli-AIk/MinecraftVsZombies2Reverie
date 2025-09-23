@@ -7,7 +7,7 @@
 
 We respect all copyrights of the original MVZ2. As MVZ2 is open-sourced under GPLv3, this branch is also open-sourced under GPLv3 and is completely community-oriented. Anyone is welcome to submit Issues, PRs, start discussions, and provide suggestions for the development of this branch.
 
-在这里查看原项目 [readme](original_readme.md)。
+View the original project [readme](original_readme.md) here.
 
 ---
 
