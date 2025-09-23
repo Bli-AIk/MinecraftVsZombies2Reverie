@@ -3,6 +3,9 @@
     Properties
     {
         _MainTex("Diffuse", 2D) = "white" {}
+		_ZWrite("Z Write", Int) = 0
+        [Enum(UnityEngine.Rendering.CompareFunction)]
+		_ZTest("Z Test", Int) = 4
 
 		[Header(Color)]
 		[Space(10)]
@@ -40,6 +43,7 @@
 		_LIT("Lit", Int) = 1
 		[HideInInspector] _LightDisabled("Light Disabled", Int) = 0
 		[Toggle] _BackgroundLit("Lit by Background", Int) = 0
+		[Toggle] _SpotLit("Lit by Spot", Int) = 1
         _LightMapSpot("Light Map Spot", 2D) = "black" {}
         _LightMapST ("Light Map ST", Vector) = (14, 10.2, 0, 0)
 
@@ -62,7 +66,8 @@
 
         Blend SrcAlpha OneMinusSrcAlpha, One OneMinusSrcAlpha
         Cull Off
-        ZWrite Off
+        ZWrite [_ZWrite]
+        ZTest [_ZTest]
 
         Pass
         {

@@ -241,6 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4225138313893746169}
+  - component: {fileID: 6621400243598567210}
   m_Layer: 5
   m_Name: ModelRoot
   m_TagString: Untagged
@@ -263,6 +264,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4195067805205706846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &6621400243598567210
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180600464542716115}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &7710122484642403827
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +348,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: -1336416021, guid: e4338c72026e47949a5e8edc50e80692, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

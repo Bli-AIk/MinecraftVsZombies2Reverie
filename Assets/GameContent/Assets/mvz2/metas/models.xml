@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <models>
+    <armorconfig id="default">
+        <armor slot="mvz2:main">
+            <anchor>armor</anchor>
+        </armor>
+        <armor slot="mvz2:shield">
+            <anchor>shield</anchor>
+        </armor>
+        <armor slot="mvz2:shield" type="mvz2:handheld">
+            <anchor>shield_hands</anchor>
+        </armor>
+    </armorconfig>
+
+    <armorconfig id="humanoid">
+        <armor slot="mvz2:main">
+            <anchor>armor</anchor>
+        </armor>
+        <armor slot="mvz2:shield" type="mvz2:large_shield">
+            <anchor>shield</anchor>
+            <offset x="0" y="-7" z="0"/>
+        </armor>
+        <armor slot="mvz2:shield" type="mvz2:small_shield">
+            <anchor>shield</anchor>
+            <offset x="0" y="-4" z="0"/>
+        </armor>
+        <armor slot="mvz2:shield" type="mvz2:handheld">
+            <anchor>shield_hands</anchor>
+        </armor>
+    </armorconfig>
+
     <!-- Contraptions -->
     <model name="dispenser" type="entity" path="mvz2:contraption/prologue/dispenser" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="furnace" type="entity" path="mvz2:contraption/prologue/furnace" width="64" height="64" xOffset="0" yOffset="-28"/>
@@ -42,9 +71,17 @@
     <model name="black_hole_bomb" type="entity" path="mvz2:contraption/mausoleum/black_hole_bomb" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="desire_pot" type="entity" path="mvz2:contraption/mausoleum/desire_pot" width="64" height="64" xOffset="0" yOffset="-28"/>
 
+    <model name="gunpowder_barrel" type="entity" path="mvz2:contraption/ship/gunpowder_barrel" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="repeatenser" type="entity" path="mvz2:contraption/ship/repeatenser" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="triplenser" type="entity" path="mvz2:contraption/ship/triplenser" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="beacon" type="entity" path="mvz2:contraption/ship/beacon" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="firework_dispenser" type="entity" path="mvz2:contraption/ship/firework_dispenser" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="wooden_fan" type="entity" path="mvz2:contraption/ship/wooden_fan" width="64" height="64" xOffset="0" yOffset="-28"/>
+
     <model name="infectenser" type="entity" path="mvz2:contraption/upgrade/infectenser" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="force_pad" type="entity" path="mvz2:contraption/upgrade/force_pad" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="golden_dropper" type="entity" path="mvz2:contraption/upgrade/golden_dropper" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="high_frequency_pulse_dispenser" type="entity" path="mvz2:contraption/upgrade/high_frequency_pulse_dispenser" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="diamond_spikes" type="entity" path="mvz2:contraption/upgrade/diamond_spikes" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="command_block" type="entity" path="mvz2:contraption/upgrade/command_block" width="64" height="64" xOffset="0" yOffset="-28"/>
 
@@ -53,16 +90,34 @@
     <model name="error_block" type="entity" path="mvz2:contraption/upgrade/error_block" width="64" height="64" xOffset="0" yOffset="-28"/>
 
     <!-- Enemies -->
-    <model name="zombie" type="entity" path="mvz2:enemy/prologue/zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="leather_capped_zombie" type="entity" path="mvz2:enemy/prologue/leather_capped_zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="iron_helmetted_zombie" type="entity" path="mvz2:enemy/prologue/iron_helmetted_zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="flag_zombie" type="entity" path="mvz2:enemy/prologue/flag_zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
+    <model name="zombie" type="entity" path="mvz2:enemy/prologue/zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="leather_capped_zombie" type="entity" path="mvz2:enemy/prologue/leather_capped_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="iron_helmetted_zombie" type="entity" path="mvz2:enemy/prologue/iron_helmetted_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="flag_zombie" type="entity" path="mvz2:enemy/prologue/flag_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
 
-    <model name="skeleton" type="entity" path="mvz2:enemy/halloween/skeleton" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="gargoyle" type="entity" path="mvz2:enemy/halloween/gargoyle" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="ghost" type="entity" path="mvz2:enemy/halloween/ghost" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="mummy" type="entity" path="mvz2:enemy/halloween/mummy" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="necromancer" type="entity" path="mvz2:enemy/halloween/necromancer" width="64" height="96" xOffset="10" yOffset="-44"/>
+    <model name="skeleton" type="entity" path="mvz2:enemy/halloween/skeleton" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="gargoyle" type="entity" path="mvz2:enemy/halloween/gargoyle" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="ghost" type="entity" path="mvz2:enemy/halloween/ghost" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="mummy" type="entity" path="mvz2:enemy/halloween/mummy" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="necromancer" type="entity" path="mvz2:enemy/halloween/necromancer" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
 
     <model name="spider" type="entity" path="mvz2:enemy/dream/spider" width="108" height="108" xOffset="0" yOffset="-48"/>
     <model name="cave_spider" type="entity" path="mvz2:enemy/dream/cave_spider" width="54" height="54" xOffset="0" yOffset="-24"/>
@@ -70,33 +125,127 @@
     <model name="mother_terror" type="entity" path="mvz2:enemy/dream/mother_terror" width="108" height="108" xOffset="0" yOffset="-48"/>
     <model name="parasite_terror" type="entity" path="mvz2:enemy/dream/parasite_terror" width="54" height="54" xOffset="0" yOffset="-24"/>
 
-    <model name="mesmerizer" type="entity" path="mvz2:enemy/castle/mesmerizer" width="77" height="140" xOffset="12" yOffset="-77"/>
-    <model name="berserker" type="entity" path="mvz2:enemy/castle/berserker" width="77" height="120" xOffset="12" yOffset="-55"/>
-    <model name="dullahan" type="entity" path="mvz2:enemy/castle/dullahan" width="94" height="140" xOffset="9" yOffset="-63"/>
+    <model name="mesmerizer" type="entity" path="mvz2:enemy/castle/mesmerizer" width="70" height="149" xOffset="14" yOffset="-72">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="berserker" type="entity" path="mvz2:enemy/castle/berserker" width="77" height="120" xOffset="12" yOffset="-55">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="dullahan" type="entity" path="mvz2:enemy/castle/dullahan" width="94" height="140" xOffset="9" yOffset="-63">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
     <model name="hell_chariot" type="entity" path="mvz2:enemy/castle/hell_chariot" width="152" height="121" xOffset="0" yOffset="-60"/>
     <model name="anubisand" type="entity" path="mvz2:enemy/castle/anubisand" width="63" height="106" xOffset="15" yOffset="-50"/>
 
-    <model name="reflective_barrier_zombie" type="entity" path="mvz2:enemy/mausoleum/reflective_barrier_zombie" width="80" height="116" xOffset="16" yOffset="-50"/>
-    <model name="talisman_zombie" type="entity" path="mvz2:enemy/mausoleum/talisman_zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="wicked_hermit_zombie" type="entity" path="mvz2:enemy/mausoleum/wicked_hermit_zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="shikaisen_zombie" type="entity" path="mvz2:enemy/mausoleum/shikaisen_zombie" width="64" height="96" xOffset="10" yOffset="-44"/>
-    <model name="emperor_zombie" type="entity" path="mvz2:enemy/mausoleum/emperor_zombie" width="70" height="104" xOffset="1" yOffset="-47"/>
+    <model name="reflective_barrier_zombie" type="entity" path="mvz2:enemy/mausoleum/reflective_barrier_zombie" width="80" height="116" xOffset="16" yOffset="-50">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="talisman_zombie" type="entity" path="mvz2:enemy/mausoleum/talisman_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="wicked_hermit_zombie" type="entity" path="mvz2:enemy/mausoleum/wicked_hermit_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="shikaisen_zombie" type="entity" path="mvz2:enemy/mausoleum/shikaisen_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="emperor_zombie" type="entity" path="mvz2:enemy/mausoleum/emperor_zombie" width="70" height="104" xOffset="1" yOffset="-47">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    
+    <model name="undead_flying_object_red" type="entity" path="mvz2:enemy/ship/undead_flying_object" width="80" height="56" xOffset="0" yOffset="-24">
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="0" />
+            </parameters>
+        </animator>    
+    </model>
+    <model name="undead_flying_object_green" type="entity" path="mvz2:enemy/ship/undead_flying_object" width="80" height="56" xOffset="0" yOffset="-24">
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="1" />
+            </parameters>
+        </animator>    
+    </model>
+    <model name="undead_flying_object_blue" type="entity" path="mvz2:enemy/ship/undead_flying_object" width="80" height="56" xOffset="0" yOffset="-24">
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="2" />
+            </parameters>
+        </animator>    
+    </model>
+    <model name="undead_flying_object_rainbow" type="entity" path="mvz2:enemy/ship/undead_flying_object" width="80" height="56" xOffset="0" yOffset="-24">
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="3" />
+            </parameters>
+        </animator>    
+    </model>
+    <model name="cannoneer_zombie" type="entity" path="mvz2:enemy/ship/cannoneer_zombie" width="85" height="92" xOffset="22" yOffset="-41">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="cannonball_zombie" type="entity" path="mvz2:enemy/ship/cannonball_zombie" width="36" height="32" xOffset="0" yOffset="-16"/>
+    <model name="zombie_cloud" type="entity" path="mvz2:enemy/ship/zombie_cloud" width="86" height="44" xOffset="0" yOffset="-22"/>
+    <model name="zombie_cloud_thunder" type="entity" path="mvz2:enemy/ship/zombie_cloud" width="86" height="44" xOffset="0" yOffset="-22">
+        <properties>
+            <int name="Variant" value="1" />
+        </properties>
+    </model>
+    <model name="zombie_cloud_snow" type="entity" path="mvz2:enemy/ship/zombie_cloud" width="86" height="44" xOffset="0" yOffset="-22">
+        <properties>
+            <int name="Variant" value="2" />
+        </properties>
+    </model>
 
     <model name="mutant_zombie" type="entity" path="mvz2:enemy/shrine/mutant_zombie" width="200" height="180" xOffset="0" yOffset="-90"/>
     <model name="mega_mutant_zombie" type="entity" path="mvz2:enemy/shrine/mega_mutant_zombie" width="200" height="180" xOffset="0" yOffset="-90"/>
-    <model name="imp" type="entity" path="mvz2:enemy/shrine/imp" width="48" height="56" xOffset="0" yOffset="-28"/>
+    <model name="imp" type="entity" path="mvz2:enemy/shrine/imp" width="48" height="56" xOffset="0" yOffset="-28">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
 
     <model name="bone_wall" type="entity" path="mvz2:enemy/halloween/bone_wall" width="80" height="80" xOffset="0" yOffset="-40"/>
     <model name="napstablook" type="entity" path="mvz2:enemy/halloween/napstablook" width="64" height="88" xOffset="0" yOffset="-44"/>
     <model name="reverse_satellite" type="entity" path="mvz2:enemy/castle/reverse_satellite" width="64" height="80" xOffset="0" yOffset="-40"/>
     <model name="skeleton_horse" type="entity" path="mvz2:enemy/castle/skeleton_horse" width="94" height="80" xOffset="9" yOffset="-33"/>
     <model name="dullahan_head" type="entity" path="mvz2:enemy/castle/dullahan_head" width="38" height="27" xOffset="0" yOffset="-14"/>
-    <model name="dullahan_main" type="entity" path="mvz2:enemy/castle/dullahan_main" width="77" height="120" xOffset="12" yOffset="-55"/>
+    <model name="dullahan_main" type="entity" path="mvz2:enemy/castle/dullahan_main" width="77" height="120" xOffset="12" yOffset="-55">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
     <model name="soulsand" type="entity" path="mvz2:enemy/castle/soulsand" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="seija_cursed_doll" type="entity" path="mvz2:enemy/castle/seija_cursed_doll"  width="32" height="32" xOffset="0" yOffset="-16"/>
-    <model name="bedserker" type="entity" path="mvz2:enemy/castle/bedserker" width="72" height="100" xOffset="10" yOffset="-48"/>
-    <model name="skeleton_warrior" type="entity" path="mvz2:enemy/mausoleum/skeleton_warrior" width="64" height="96" xOffset="16" yOffset="-44"/>
-    <model name="skeleton_mage" type="entity" path="mvz2:enemy/mausoleum/skeleton_mage" width="64" height="96" xOffset="10" yOffset="-44"/>
+    <model name="bedserker" type="entity" path="mvz2:enemy/castle/bedserker" width="86" height="120" xOffset="0" yOffset="-57">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="skeleton_warrior" type="entity" path="mvz2:enemy/mausoleum/skeleton_warrior" width="66" height="96" xOffset="16" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="skeleton_mage" type="entity" path="mvz2:enemy/mausoleum/skeleton_mage" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="skeleton_mage_fire" type="entity" path="mvz2:enemy/mausoleum/skeleton_mage" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="1" />
+            </parameters>
+        </animator>    
+    </model>
+    <model name="skeleton_mage_frost" type="entity" path="mvz2:enemy/mausoleum/skeleton_mage" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="2" />
+            </parameters>
+        </animator>    
+    </model>
+    <model name="skeleton_mage_lightning" type="entity" path="mvz2:enemy/mausoleum/skeleton_mage" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+        <animator updateOnShot="true">
+            <parameters>
+                <int name="Variant" value="3" />
+            </parameters>
+        </animator>    
+    </model>
     <model name="shikaisen_staff" type="entity" path="mvz2:enemy/mausoleum/shikaisen_staff" width="24" height="64" xOffset="0" yOffset="-26"/>
 
 
@@ -120,9 +269,12 @@
     <model name="nyaightmare" type="entity" path="mvz2:cart/nyaightmare" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="bowl_chariot" type="entity" path="mvz2:cart/bowl_chariot" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="ballista" type="entity" path="mvz2:cart/ballista" width="64" height="64" xOffset="0" yOffset="-28"/>
+    <model name="unzan_fist" type="entity" path="mvz2:cart/unzan_fist" width="64" height="64" xOffset="0" yOffset="-28"/>
 
     <!-- Pickups -->
     <model name="redstone" type="entity" path="mvz2:pickup/redstone" width="64" height="64" xOffset="0" yOffset="-16"/>
+    <model name="gunpowder" type="entity" path="mvz2:pickup/gunpowder" width="64" height="64" xOffset="0" yOffset="-16"/>
+    <model name="furious_gunpowder" type="entity" path="mvz2:pickup/furious_gunpowder" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="emerald" type="entity" path="mvz2:pickup/emerald" width="32" height="32" xOffset="0" yOffset="-16"/>
     <model name="ruby" type="entity" path="mvz2:pickup/ruby" width="48" height="48" xOffset="0" yOffset="-20"/>
     <model name="sapphire" type="entity" path="mvz2:pickup/sapphire" width="48" height="48" xOffset="0" yOffset="-20"/>
@@ -136,14 +288,15 @@
     <model name="artifact_pickup" type="entity" path="mvz2:pickup/artifact_pickup" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="wither_scroll" type="entity" path="mvz2:pickup/wither_scroll" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="zombie_scroll" type="entity" path="mvz2:pickup/zombie_scroll" width="64" height="64" xOffset="0" yOffset="-16"/>
-    <model name="trophy" type="entity" path="mvz2:pickup/trophy" width="64" height="64" xOffset="0" yOffset="-32"/>
+    <model name="trophy" type="entity" path="mvz2:pickup/trophy" width="85" height="85" xOffset="0" yOffset="-32"/>
 
     <model name="starshard.default" type="entity" path="mvz2:pickup/starshards/default" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="starshard.halloween" type="entity" path="mvz2:pickup/starshards/halloween" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="starshard.dream" type="entity" path="mvz2:pickup/starshards/dream" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="starshard.castle" type="entity" path="mvz2:pickup/starshards/castle" width="64" height="64" xOffset="0" yOffset="-16"/>
     <model name="starshard.mausoleum" type="entity" path="mvz2:pickup/starshards/mausoleum" width="64" height="64" xOffset="0" yOffset="-16"/>
-    
+    <model name="starshard.ship" type="entity" path="mvz2:pickup/starshards/ship" width="64" height="64" xOffset="0" yOffset="-16"/>
+
     <!-- Effects -->
     <model name="miner" type="entity" path="mvz2:effect/miner" width="32" height="32" xOffset="0" yOffset="-16"/>
     <model name="mine_debris" type="entity" path="mvz2:effect/mine_debris" width="150" height="100" xOffset="0" yOffset="-20"/>
@@ -187,10 +340,20 @@
     <model name="nightmareaper_shadow" type="entity" path="mvz2:effect/nightmareaper_shadow" width="240" height="200" xOffset="0" yOffset="-20"/>
     <model name="slice_spark" type="entity" path="mvz2:effect/slice_spark" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="crushing_walls" type="entity" path="mvz2:effect/crushing_walls" width="800" height="600" xOffset="0" yOffset="0"/>
-    <model name="nightmareaper_timer" type="entity" path="mvz2:effect/nightmareaper_timer" width="160" height="50" xOffset="0" yOffset="0"/>
+    <model name="nightmareaper_timer" type="entity" path="mvz2:effect/nightmareaper_timer" width="160" height="50" xOffset="0" yOffset="0">
+        <properties>
+            <int name="Timeout" value="1800" />
+            <color name="Color" value="#FFF" />
+        </properties>
+    </model>
     <model name="nightmare_darkness" type="entity" path="mvz2:effect/nightmare_darkness" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="nightmare_glass" type="entity" path="mvz2:effect/nightmare_glass" shot="false" width="1020" height="600" xOffset="510" yOffset="300"/>
-    <model name="floating_text" type="entity" path="mvz2:effect/floating_text" width="80" height="25" xOffset="0" yOffset="0"/>
+    <model name="floating_text" type="entity" path="mvz2:effect/floating_text" width="80" height="25" xOffset="0" yOffset="0">
+        <properties>
+            <string name="Text" value="Text" />
+            <color name="Color" value="#FFF" />
+        </properties>
+    </model>
     <model name="spike_particles" type="entity" path="mvz2:effect/spike_particles" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="diamond_spike_particles" type="entity" path="mvz2:effect/diamond_spike_particles" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="mind_control_lines" type="entity" path="mvz2:effect/mind_control_lines" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
@@ -202,7 +365,7 @@
     <model name="seija_faint_effect" type="entity" path="mvz2:effect/seija_faint_effect" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="wither_summoners" type="entity" path="mvz2:effect/wither_summoners" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="castle_twilight" type="entity" path="mvz2:effect/castle_twilight" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
-    <model name="thunder_bolt_horizontal" type="entity" path="mvz2:effect/thunder_bolt_horizontal" width="920" height="120" xOffset="437" yOffset="0"/>
+    <model name="thunder_bolt_horizontal" type="entity" path="mvz2:effect/thunder_bolt_horizontal" width="920" height="120" xOffset="-414" yOffset="0"/>
     <model name="spawner_appear_embers" type="entity" path="mvz2:effect/spawner_appear_embers" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="ember_particles" type="entity" path="mvz2:effect/ember_particles" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="fireburn" type="entity" path="mvz2:effect/fireburn" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
@@ -216,9 +379,15 @@
     <model name="redline" type="entity" path="mvz2:effect/redline" width="80" height="80" xOffset="0" yOffset="0"/>
     <model name="iz_observer" type="entity" path="mvz2:effect/iz_observer" width="80" height="80" xOffset="0" yOffset="0"/>
     <model name="spirit_universe" type="entity" path="mvz2:effect/spirit_universe" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
-    <model name="zombie_block" type="entity" path="mvz2:effect/zombie_block" width="80" height="80" xOffset="0" yOffset="0"/>
+    <model name="zombie_block" type="entity" path="mvz2:effect/zombie_block" width="80" height="80" xOffset="0" yOffset="-40"/>
     <model name="dark_hole" type="entity" path="mvz2:effect/dark_hole" shot="false" width="120" height="120" xOffset="0" yOffset="0"/>
     <model name="amplified_roar" type="entity" path="mvz2:effect/amplified_roar" shot="false" width="120" height="120" xOffset="0" yOffset="0"/>
+    <model name="ufo_background" type="entity" path="mvz2:effect/ufo_background" width="40" height="28" xOffset="0" yOffset="-12"/>
+    <model name="firework_blast" type="entity" path="mvz2:effect/firework_blast" shot="false" width="160" height="160" xOffset="0" yOffset="0"/>
+    <model name="zombie_cloud_raindrop" type="entity" path="mvz2:effect/zombie_cloud_raindrop" width="5" height="32" xOffset="0" yOffset="-16"/>
+    <model name="zombie_cloud_snowflake" type="entity" path="mvz2:effect/zombie_cloud_snowflake" width="7" height="7" xOffset="0" yOffset="0"/>
+    <model name="water_stain" type="entity" path="mvz2:effect/water_stain" shot="false" width="160" height="160" xOffset="0" yOffset="0"/>
+    <model name="wind_speedline" type="entity" path="mvz2:effect/wind_speedline" shot="false" width="32" height="32" xOffset="0" yOffset="0"/>
 
     <!-- Projectiles -->
     <model name="arrow" type="entity" path="mvz2:projectile/arrow" width="32" height="10" xOffset="0" yOffset="0"/>
@@ -243,7 +412,7 @@
     <model name="cobble" type="entity" path="mvz2:projectile/cobble" width="12" height="12" xOffset="0" yOffset="-6"/>
     <model name="boulder" type="entity" path="mvz2:projectile/boulder" width="48" height="48" xOffset="0" yOffset="-24"/>
     <model name="golden_ball" type="entity" path="mvz2:projectile/golden_ball" width="24" height="24" xOffset="0" yOffset="-12"/>
-    <model name="diamond_caltrop" type="entity" path="mvz2:projectile/diamond_caltrop" width="16" height="16" xOffset="0" yOffset="-8"/>
+    <model name="diamond_caltrop" type="entity" path="mvz2:projectile/diamond_caltrop" width="16" height="16" xOffset="0" yOffset="-6"/>
     <model name="compelling_orb" type="entity" path="mvz2:projectile/compelling_orb" width="32" height="32" xOffset="0" yOffset="0"/>
     <model name="seija_magic_bomb" type="entity" path="mvz2:projectile/seija_magic_bomb" width="24" height="24" xOffset="0" yOffset="-12"/>
     <model name="seija_bullet" type="entity" path="mvz2:projectile/seija_bullet" width="32" height="16" xOffset="0" yOffset="0"/>
@@ -256,6 +425,14 @@
     <model name="ice_bolt" type="entity" path="mvz2:projectile/ice_bolt" width="64" height="20" xOffset="6" yOffset="0"/>
     <model name="charged_bolt" type="entity" path="mvz2:projectile/charged_bolt" width="64" height="64" xOffset="0" yOffset="0"/>
 
+    <model name="hell_planet_otherworld" type="entity" path="mvz2:projectile/hell_planet_otherworld" width="56" height="56" xOffset="0" yOffset="0"/>
+    <model name="hell_planet_earth" type="entity" path="mvz2:projectile/hell_planet_earth" width="46" height="46" xOffset="0" yOffset="0"/>
+    <model name="hell_planet_moon" type="entity" path="mvz2:projectile/hell_planet_moon" width="26" height="26" xOffset="0" yOffset="0"/>
+    <model name="shuriken" type="entity" path="mvz2:projectile/shuriken" width="26" height="26" xOffset="0" yOffset="0"/>
+    <model name="beacon_meteor" type="entity" path="mvz2:projectile/beacon_meteor" width="64" height="64" xOffset="0" yOffset="0"/>
+    <model name="firework" type="entity" path="mvz2:projectile/firework" width="38" height="12" xOffset="0" yOffset="0"/>
+    <model name="firework_big" type="entity" path="mvz2:projectile/firework_big" width="38" height="30" xOffset="0" yOffset="0"/>
+
     <!-- Armors -->
     <model name="leather_cap" type="armor" path="mvz2:armor/leather_cap" width="33" height="14" xOffset="0" yOffset="0"/>
     <model name="iron_helmet" type="armor" path="mvz2:armor/iron_helmet" width="33" height="14" xOffset="0" yOffset="0"/>
@@ -263,11 +440,13 @@
     <model name="mesmerizer_crown" type="armor" path="mvz2:armor/mesmerizer_crown" width="34" height="40" xOffset="0" yOffset="-21"/>
     <model name="berserker_helmet" type="armor" path="mvz2:armor/berserker_helmet" width="32" height="14" xOffset="0" yOffset="-9"/>
     <model name="bedserker_helmet" type="armor" path="mvz2:armor/bedserker_helmet" width="32" height="14" xOffset="0" yOffset="-9"/>
-    <model name="reflective_barrier" type="armor" path="mvz2:armor/reflective_barrier" width="56" height="113" xOffset="0" yOffset="-10"/>
+    <model name="reflective_barrier" type="armor" path="mvz2:armor/reflective_barrier" width="56" height="113" xOffset="0" yOffset="0"/>
     <model name="wicked_hermit_hat" type="armor" path="mvz2:armor/wicked_hermit_hat" width="32" height="14" xOffset="0" yOffset="-9"/>
     <model name="skeleton_warrior_helmet" type="armor" path="mvz2:armor/skeleton_warrior_helmet" width="33" height="26" xOffset="0" yOffset="2"/>
-    <model name="skeleton_warrior_shield" type="armor" path="mvz2:armor/skeleton_warrior_shield" width="34" height="34" xOffset="4" yOffset="4"/>
+    <model name="skeleton_warrior_shield" type="armor" path="mvz2:armor/skeleton_warrior_shield" width="33" height="34" xOffset="4" yOffset="0"/>
     <model name="emperor_crown" type="armor" path="mvz2:armor/emperor_crown" width="70" height="72" xOffset="1" yOffset="18"/>
+    <model name="umbrella_shield" type="armor" path="mvz2:armor/umbrella_shield" width="64" height="100" xOffset="16" yOffset="0"/>
+    <model name="cannon" type="armor" path="mvz2:armor/cannon" width="61" height="36" xOffset="5" yOffset="7"/>
 
     <!-- HeldItems -->
     <model name="starshard.default" type="held" path="mvz2:held/starshards/default" shot="false" width="32" height="32" xOffset="0" yOffset="-28"/>
@@ -275,6 +454,7 @@
     <model name="starshard.dream" type="held" path="mvz2:held/starshards/dream" shot="false" width="32" height="32" xOffset="0" yOffset="-28"/>
     <model name="starshard.castle" type="held" path="mvz2:held/starshards/castle" shot="false" width="32" height="32" xOffset="0" yOffset="-28"/>
     <model name="starshard.mausoleum" type="held" path="mvz2:held/starshards/mausoleum" shot="false" width="32" height="32" xOffset="0" yOffset="-28"/>
+    <model name="starshard.ship" type="held" path="mvz2:held/starshards/ship" shot="false" width="32" height="32" xOffset="0" yOffset="-28"/>
     <model name="pickaxe" type="held" path="mvz2:held/pickaxe" shot="false" width="64" height="64" xOffset="0" yOffset="-28"/>
     <model name="trigger" type="held" path="mvz2:held/trigger" shot="false" width="32" height="32" xOffset="0" yOffset="-28"/>
     <model name="sword" type="held" path="mvz2:held/sword" shot="false" width="64" height="64" xOffset="0" yOffset="-28"/>
