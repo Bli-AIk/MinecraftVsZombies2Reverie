@@ -1,7 +1,7 @@
 ---
 name: Pull Request
 about: 提交代码合并请求
-title: "type: Title"
+title: "[type]: Title"
 labels: ''
 
 ---
