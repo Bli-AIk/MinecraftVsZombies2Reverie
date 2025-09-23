@@ -1,11 +1,3 @@
----
-name: Pull Request
-about: 提交代码合并请求
-title: "type: Title"
-labels: ''
-
----
-
 ### PR 类型
 
 *请勾选本次 PR 所属的类型（可多选）*
