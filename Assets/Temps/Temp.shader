@@ -42,17 +42,23 @@ Shader "Custom/Temp"
         void vert(inout appdata_full v)
         {
             float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-            float xAbsDistance = abs(worldPos.x - 1.0 - _WorldSpaceCameraPos.x);
+
+            float xDistance = (_WorldSpaceCameraPos.x + 1.0) - worldPos.x;
+            xDistance = max(xDistance, 0.0);
+
             float zDistance = worldPos.z - _WorldSpaceCameraPos.z;
 
-            if (xAbsDistance > 5.0)
-            {
-                float nearZ = 0.0;
-                float farZ = 5.0;
-                float t = saturate((zDistance - nearZ) / (farZ - nearZ));
-                v.vertex.z -= lerp(-_MaxOffset, 0.0, t);
-            }
+            float xFactor = smoothstep(4.0, 6.0, xDistance);
+
+            float nearZ = 0.0;
+            float farZ = 5.0;
+            float t = saturate((zDistance - nearZ) / (farZ - nearZ));
+
+            v.vertex.z -= lerp(-_MaxOffset, 0.0, t) * xFactor;
         }
+
+
+
 
 
 
