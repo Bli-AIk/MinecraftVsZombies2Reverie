@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 namespace MVZ2.Reverie
 {
-    public class LandingSceneController : MonoBehaviour
+    public class ReverieLandingSceneController : MonoBehaviour
     {
         void Start()
         {
