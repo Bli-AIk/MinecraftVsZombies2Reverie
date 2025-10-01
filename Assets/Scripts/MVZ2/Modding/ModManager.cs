@@ -25,6 +25,13 @@ namespace MVZ2.Modding
                 CatalogPath = null,
                 IsBuiltin = true,
             });
+            modInfos.Add(new ModInfo("reverie", locator)
+            {
+                LevelDataVersion = LevelManager.CURRENT_DATA_VERSION,
+                DisplayName = "Reverie",
+                CatalogPath = null,
+                IsBuiltin = false,
+            });
         }
         public void InitModLogics(GlobalGame game)
         {

@@ -28,6 +28,6 @@ namespace MVZ2.Reverie
         }
         #endregion
 
-        public const string spaceName = "mvz2r";
+        public const string spaceName = "reverie";
     }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+    
+    <!-- Contraptions -->
+    <model name="block_of_redstone" type="entity" path="reverie:contraption/th10/block_of_redstone" width="64" height="64" xOffset="0" yOffset="-28"/>
+    
+    <!-- Enemies -->
+    
+    <!-- Obstacles -->
+  
+    
+    <!-- Bosses -->
+ 
+    
+    <!-- Carts -->
+  
+    
+    <!-- Pickups -->
+  
+    
+    <!-- Effects -->
+   
+    
+    <!-- Projectiles -->
+  
+    
+    <!-- Armors -->
+  
+    
+    <!-- HeldItems -->
+ 
+    
+    <!-- Icons -->
+
+</models>
