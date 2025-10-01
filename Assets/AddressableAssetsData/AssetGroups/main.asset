@@ -1018,6 +1018,13 @@ MonoBehaviour:
     - Main
     - Spritesheet
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16e32690a58a63de2abbdae1ef719b63
+    m_Address: reverie:contraption/th10/block_of_redstone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 16fc5dd769a48d34292fd51b6a315f93
     m_Address: mvz2:ship_map
     m_ReadOnly: 0
