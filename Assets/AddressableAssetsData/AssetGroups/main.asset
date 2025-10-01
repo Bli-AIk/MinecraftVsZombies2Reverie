@@ -9478,6 +9478,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e550f9d10c3247af8d31041fc9ae680a
+    m_Address: reverie:models
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Meta
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e58665a25470bdf438fd493d170f6cc4
     m_Address: mvz2:ui/level/energy_gear
     m_ReadOnly: 0
